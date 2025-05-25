@@ -1,6 +1,7 @@
 // module imports
 const prettierPlugin = require('eslint-plugin-prettier');
 const prettierRecommended = require('eslint-plugin-prettier').configs.recommended;
+const globals = require('globals');
 
 module.exports = [
   { ignores: ['node_modules', 'dist', 'build', '*.log', 'coverage'] },
@@ -9,13 +10,7 @@ module.exports = [
     languageOptions: {
       ecmaVersion: 2022,
       sourceType: 'script',
-      globals: {
-        __dirname: 'readonly',
-        __filename: 'readonly',
-        process: 'readonly',
-        module: 'readonly',
-        require: 'readonly',
-      },
+      globals: globals.node, // globals.nodeBuiltin
     },
     plugins: {
       prettier: prettierPlugin,
