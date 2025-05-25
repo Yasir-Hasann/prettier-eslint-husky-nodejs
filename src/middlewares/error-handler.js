@@ -13,7 +13,7 @@ const Error = (err, req, res, next) => {
   }
 
   if (err.name === 'ValidationError') {
-    const messages = Object.values(err.errors).map((e) => e.message);
+    const messages = Object.values(err.errors).map(e => e.message);
     const message = messages.join(', ');
     error = new ErrorResponse(message, 400);
   }

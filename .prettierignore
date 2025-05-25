@@ -1,4 +1,43 @@
-build/
+# Dependency folder
 node_modules/
-package-lock.json
-yarn.lock
+
+# Build and dist output
+dist/
+build/
+lib/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Test coverage
+coverage/
+
+# Compiled or generated files
+*.min.js
+*.bundle.js
+*.tsbuildinfo
+
+# Static assets
+public/
+static/
+assets/
+
+# Temporary or cache folders
+.cache/
+.nyc_output/
+.tmp/
+
+# Lint & Prettier specific
+.eslintcache
+
+# OS-specific
+.DS_Store
+
+# Ignore mock or fixture files
+__mocks__/
+__fixtures__/
+mocks/
