@@ -35,7 +35,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint . --ext .js"
+      "npm run fix"
     ]
   }
 }
