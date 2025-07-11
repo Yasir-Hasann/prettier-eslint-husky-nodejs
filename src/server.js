@@ -1,6 +1,6 @@
 // module imports
-const cors = require('cors');
 require('dotenv').config();
+const cors = require('cors');
 const express = require('express');
 const morgan = require('morgan');
 
@@ -12,8 +12,8 @@ const app = express();
 const port = process.env.PORT || 5001;
 
 // middlewares
-app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(morgan('dev'));
 
