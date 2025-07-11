@@ -29,7 +29,9 @@ module.exports = [
       'no-buffer-constructor': 'error',
       'prefer-const': 'error',
       'no-var': 'error',
-      'no-unused-vars': ['error', { argsIgnorePattern: '^(_|req|res|next)$' }],
+      // 'no-unused-vars': ['error', { argsIgnorePattern: '^(_|req|res|next)$' }],
+      'no-unused-vars': 'error',
+      'no-const-assign': 'error',
     },
   },
 ];
