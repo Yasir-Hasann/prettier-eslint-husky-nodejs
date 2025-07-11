@@ -7,12 +7,6 @@ const morgan = require('morgan');
 // file imports
 const errorHandler = require('./middlewares/error-handler');
 
-let a;
-const b = 4;
-b = 3;
-const d = 'fff';
-let e = 'fdsfsf';
-
 // variable initializations
 const app = express();
 const port = process.env.PORT || 5001;
