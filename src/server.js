@@ -11,6 +11,7 @@ let a;
 const b = 4;
 b = 3;
 const d = 'fff';
+let e = 'fdsfsf';
 
 // variable initializations
 const app = express();
