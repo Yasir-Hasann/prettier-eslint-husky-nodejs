@@ -11,7 +11,7 @@
     "format:check": "prettier . --check",
     "lint": "eslint . --ext .js",
     "lint:fix": "npm run lint -- --fix",
-    "fix": "npm run format && npm run lint:fix"
+    "fix": "npm run format && npm run lint:fix && npm run lint"
   },
   "keywords": [],
   "author": "<https://github.com/Yasir-Hasann>",

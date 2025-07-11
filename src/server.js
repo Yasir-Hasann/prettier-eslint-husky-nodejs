@@ -8,6 +8,8 @@ const morgan = require('morgan');
 const errorHandler = require('./middlewares/error-handler');
 
 let a;
+const b = 4;
+b = 3;
 
 // variable initializations
 const app = express();
