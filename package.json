@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./src/server.js",
     "dev": "nodemon ./src/server.js",
-    "prepare": "husky",
+    "prepare": "husky install",
     "format": "prettier . --write",
     "format:check": "prettier . --check",
     "lint": "eslint . --ext .js",
